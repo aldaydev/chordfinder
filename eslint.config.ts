@@ -11,11 +11,18 @@ export default tseslint.config(
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
+      sourceType: 'module',
       globals: globals.browser,
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'import': await import('eslint-plugin-import'), // import plugin
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -23,6 +30,16 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+      'import/resolver': {
+        typescript: {
+          project: './tsconfig.json',
+        },
+      },
     },
   },
 )

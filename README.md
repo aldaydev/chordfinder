@@ -1,8 +1,32 @@
 # Chord Finder App
 
+Chord Finder es un buscador de acordes que utiliza [Chords API](https://chords.alday.dev) para permitir al usuario buscar listados de acordes y filtrarlos por nota y tipo, así como manejar la paginación.
+
+La App está construida a través de la metodología TDD (Test Driven Development), basada en crear la aplicación partiendo de tests.
+
 ## Sprints y Updates
 
 ### Initial commit
 
-* Inicialización de React (TS) con Vite
+* Inicialización de React (TS) + SWC con Vite
+* Limpieza del proyecto inicial
+* Instalación de los @types de node
+  - npm install --save-dev @types/node
+* Configuración de alias "@ = src" ===> En todos los tsconfig.json y vite.config.ts
+* Configuración del eslint:
+  - npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-import-resolver-typescript eslint-plugin-import
+  - Esto instala:
+    - ESLint y su parser para TypeScript
+    - Plugin para TypeScript
+    - Plugin para React
+    - Plugin para manejar importaciones y resolver alias de TypeScript
+* Instalación de vitest:
+  - npm install -D vitest
+* Configuración de vitest
+* Instalación de React Testing Library y otras funcionalidades
+  - npm install --save-dev @testing-library/react @testing-library/jest-dom @testing-library/user-event jsdom
+
+
+
+
 
