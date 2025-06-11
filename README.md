@@ -6,6 +6,12 @@ La App está construida a través de la metodología TDD (Test Driven Developmen
 
 ## Sprints y Updates
 
+### feature/structure
+
+* Instalar react router dom + types
+  - npm install react-router-dom
+  - npm install -D @types/react-router-dom
+
 ### Initial commit
 
 * Inicialización de React (TS) + SWC con Vite
