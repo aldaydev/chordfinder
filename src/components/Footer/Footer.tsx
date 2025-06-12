@@ -2,6 +2,8 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <div>Footer</div>
+        <footer className='App__footer'>
+            Footer
+        </footer>
     )
 }

@@ -1,0 +1,8 @@
+.App__header{
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    box-shadow: 0 0 8px 1px var(--color-blue-trans);
+    padding: var(--responsive-padding);
+}

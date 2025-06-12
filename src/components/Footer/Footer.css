@@ -1,0 +1,4 @@
+.App__footer{
+    background-color: var(--color-white);
+    box-shadow: 0 0 8px 1px var(--color-blue-trans);
+}
