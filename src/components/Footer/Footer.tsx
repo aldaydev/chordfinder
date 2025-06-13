@@ -4,7 +4,7 @@ import './Footer.css'
 export default function Footer() {
     return (
         <footer className='App__footer'>
-            <span>Website create from </span>
+            <span>Created from </span>
             <Link 
                 to='https://chords.alday.dev'
                 aria-label='Go to Chords API'

@@ -38,7 +38,7 @@ body{
 
 .App__main{
   background-color: var(--color-white);
-  min-height: 120dvh;
+  /* min-height: 120dvh; */
 }
 
 @media  screen and (min-width: 1024px) {

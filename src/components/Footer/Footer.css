@@ -3,10 +3,9 @@
     box-shadow: 0 0 8px 1px var(--color-blue-trans);
     color: var(--color-white);
 
-    padding: 2rem 2.5rem;
+    padding: 2rem 2.2rem;
 
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     row-gap: .7rem;
