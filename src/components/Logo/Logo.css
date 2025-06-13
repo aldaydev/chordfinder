@@ -12,24 +12,20 @@
     width: 45px;
 }
 
-.logo__link:hover{
-    scale: 1.02;
-}
-
 .logo__textContainer{
     display: none;
 }
 
 .logo__text{
     line-height: 1.1;
-    color: var(--color-blue-dark);
-    font-size: 1.8rem;
-    font-weight: 800;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 /* ---------- RESPONSIVE ---------- */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 480px){
     .logo__textContainer{
         display: flex;
         flex-direction: column;

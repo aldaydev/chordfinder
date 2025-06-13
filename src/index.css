@@ -1,9 +1,11 @@
 :root{
-  --color-blue-dark: #062964;
+  --color-dark: #1b171b;
+  --color-blue-trans: #1b171b48;
+  --color-blue-dark: #062355;
   --color-blue-light: #465698;
   --color-blue-trans: #06286423;
   --color-white: #fcfcf2;
-  --responsive-padding: 0 10%;
+  --responsive-padding: 0 5%;
 }
 
 :root {
@@ -39,21 +41,28 @@ body{
   min-height: 120dvh;
 }
 
-@media  screen and (max-width: 1400px) {
+@media  screen and (min-width: 1024px) {
   :root{
     --responsive-padding: 0 8%;
   }
 }
 
-@media  screen and (max-width: 860px) {
+@media  screen and (min-width: 1400px) {
   :root{
-    --responsive-padding: 0 5%;
+    --responsive-padding: 0 10%;
   }
 }
+
+
 
 /* ----------------- RESET STYLES ----------------- */
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
 }
