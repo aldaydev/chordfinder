@@ -52,7 +52,7 @@ describe('Logo', () => {
 
         // Logo debe tener un arl y un src concretos
         expect(logoImage).toHaveAttribute('alt', 'Chord Finder oficial logo');
-        expect(logoImage).toHaveAttribute('src', '/chordfinder_icon.svg');
+        expect(logoImage).toHaveAttribute('src', '/brand/chordfinder_icon.svg');
 
         
 

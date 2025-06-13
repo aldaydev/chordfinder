@@ -5,7 +5,7 @@ export default function Logo() {
     return (
         <Link to={'/'} aria-label="Go to home" className="logo__link">
             <img 
-                src='/chordfinder_icon.svg' 
+                src='/brand/chordfinder_icon.svg' 
                 alt="Chord Finder oficial logo" 
                 className="logo__image"
             />

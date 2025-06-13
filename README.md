@@ -8,8 +8,12 @@ La App está construida a través de la metodología TDD (Test Driven Developmen
 
 ### feature/header
 
-* Creación del componente "Logo", que tendrá su propio test
+* Creación del componente "Footer", que tendrá su propio test
 
+### feature/header
+
+* Creación del componente "Logo", que tendrá su propio test
+* Creación del componente "Header", con su propio test
 
 ### feature/structure
 
