@@ -14,6 +14,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    column-gap: 2rem;
     height: 100%;
     margin: 0;
 }
@@ -31,7 +32,7 @@
 
 .headernNav__icon{
     width: 33px;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
 
 @media screen and (min-width: 600px) {
@@ -40,10 +41,11 @@
         display: block;
         font-size: 1.5rem;
         font-weight: 700;
+        margin-right: .8rem;
     }
 
     .headernNav__list{
-        column-gap: 1.2rem;
+        column-gap: 2.5rem;
     }
 
     .headernNav__icon{
