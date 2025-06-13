@@ -6,14 +6,24 @@ La App está construida a través de la metodología TDD (Test Driven Developmen
 
 ## Sprints y Updates
 
+### feature/home
+
+* Configuración de axios y tanstack query
+  - npm install axios
+  - npm install @tanstack/react-query
+* Creación del test del home que valide la petición a la API
+  - Debe mockear axios, la petición con React Query y el resultado
+
 ### feature/header
 
 * Creación del componente "Footer", que tendrá su propio test
+* Trabajo con los estilos de esta sección (responsive, mobile first)
 
 ### feature/header
 
 * Creación del componente "Logo", que tendrá su propio test
 * Creación del componente "Header", con su propio test
+* Trabajo con los estilos de esta sección (responsive, mobile first)
 
 ### feature/structure
 
