@@ -1,5 +1,5 @@
 :root{
-  --color-blue-dark: #041738;
+  --color-blue-dark: #062964;
   --color-blue-light: #465698;
   --color-blue-trans: #06286423;
   --color-white: #fcfcf2;
@@ -8,8 +8,9 @@
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: auto;
   font-weight: 400;
+  font-size: 62.5%;
 
   color-scheme: light dark;
   color: var(--color-blue-dark);
@@ -48,4 +49,11 @@ body{
   :root{
     --responsive-padding: 0 5%;
   }
+}
+
+/* ----------------- RESET STYLES ----------------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

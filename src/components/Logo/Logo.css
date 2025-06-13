@@ -1,0 +1,37 @@
+.logo__link{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .8rem;
+    transition: scale .3s ease-in-out;
+}
+
+.logo__image{
+    width: 45px;
+}
+
+.logo__link:hover{
+    scale: 1.02;
+}
+
+.logo__textContainer{
+    display: none;
+}
+
+.logo__text{
+    line-height: 1.1;
+    color: var(--color-blue-dark);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (min-width: 800px){
+    .logo__textContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
