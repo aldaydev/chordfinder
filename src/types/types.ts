@@ -20,3 +20,12 @@ export type Chord = {
         intervals: string[];
     };
 };
+
+export type ChordList = Chord[];
+
+export type ChordParams = {
+    note?: string | null,
+    type?: string | null,
+    page?: number | null,
+    limit?: string | number | null
+}

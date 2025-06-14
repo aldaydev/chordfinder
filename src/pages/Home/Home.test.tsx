@@ -32,7 +32,7 @@ describe('Home', () => {
 
     it('Should contain an h1 and a description', async () => {
         await waitFor(() => {
-            expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/The chords finder/i);
+            expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/Chords finder/i);
             expect(screen.getByText(/easy.*search/i)).toBeInTheDocument();
         })
     })

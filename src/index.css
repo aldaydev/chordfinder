@@ -51,7 +51,7 @@ body{
 
 @media  screen and (min-width: 1400px) {
   :root{
-    --responsive-padding: 0 10%;
+    --responsive-padding: 0 20%;
   }
 }
 
