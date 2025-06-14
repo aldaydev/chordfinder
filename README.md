@@ -14,6 +14,9 @@ La App está construida a través de la metodología TDD (Test Driven Developmen
 * Creación del test del home que valide la petición a la API
   - Debe mockear axios, la petición con React Query y el resultado
 
+* Instalación y configuración de Redux
+  - npm install @reduxjs/toolkit react-redux
+
 ### feature/header
 
 * Creación del componente "Footer", que tendrá su propio test

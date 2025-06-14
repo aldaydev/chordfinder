@@ -1,7 +1,31 @@
+// ---------- NOTE AND CHORD TYPE ----------
+
+export type Note = {
+    name: LangText,
+    _id: string,
+    type: string
+}
+
+export type ChordType = {
+    name: LangText,
+    description: LangText,
+    _id: string,
+    intervals: string[];
+}
+
+// ---------- NOTE AND CHORD LIST TYPES ----------
+
+export type NoteList = Note[];
+export type ChordTypeList = ChordType[];
+
+// ---------- LANG TEXT ----------
+
 export type LangText = {
     eng: string;
     spa: string;
 }
+
+// ---------- CHORD AND CHORD LIST ----------
 
 export type Chord = {
     name: LangText;
@@ -10,22 +34,23 @@ export type Chord = {
     };
     _id: string;
     notes: LangText[];
-    note: {
-        name: LangText;
-        type: string;
-    };
-    type: {
-        name: LangText;
-        description: LangText;
-        intervals: string[];
-    };
+    note: Omit<Note, "_id">;
+    type: Omit<ChordType, "_id">;
 };
 
-export type ChordList = Chord[];
+export type ChordList = {
+    count: number,
+    currentPage: number,
+    totalPagés: number,
+    limit: number,
+    data: Chord[]
+}
 
 export type ChordParams = {
-    note?: string | null,
-    type?: string | null,
-    page?: number | null,
-    limit?: string | number | null
+    note: string,
+    type: string,
+    page: number,
+    limit: string | number
 }
+
+
