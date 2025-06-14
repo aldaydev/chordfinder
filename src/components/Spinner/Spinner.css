@@ -1,0 +1,19 @@
+.spinnerContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinnerContainer--homeChord{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinnerContainer--homeChord img{
+    width: 80px;
+}
+

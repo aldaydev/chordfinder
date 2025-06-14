@@ -4,7 +4,7 @@ const chordMock = {
     spa: "Do mayor"
   },
   images: {
-    pos1: "https://github.com/aldaydev/chords_images/blob/main/guitar-chords/c/chord-c-major-pos1.png?raw=true"
+    pos1: "https://chords.alday.dev/img/guitar-chords/c/chord-c-major-pos1.png"
   },
   _id: "c_major",
   notes: [

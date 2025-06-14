@@ -1,0 +1,62 @@
+.homeHeader__title{
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.homeHeader__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.homeHeader__description{
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.homeHeader__chordContainer{
+    max-width: 600px;
+    position: relative;
+}
+
+.homeHeader__chordImage{
+    width: 100%;
+}
+
+.homeHeader__chordName{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 87%;
+    left: 35%;
+}
+
+@media  screen and (min-width: 1024px) {
+    .homeHeader__content{
+        flex-direction: row;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .homeHeader__description{
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .homeHeader__chordName{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        height: fit-content;
+        position: absolute;
+        top: 87%;
+        left: 35%;
+    }
+}

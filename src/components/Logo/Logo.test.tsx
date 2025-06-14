@@ -38,7 +38,7 @@ describe('Logo', () => {
         const logoLink = screen.getByRole('link', { name: /home/i });
         const logoImage = screen.getByRole('img', { name: /logo/i });
         const logoTextUp = screen.getByText('CHORD');
-        const logoTextDown = screen.getByText('CHORD');
+        const logoTextDown = screen.getByText('FINDER');
 
         // Logo y texto deben estar en el documento
         expect(logoImage).toBeInTheDocument();
