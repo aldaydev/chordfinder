@@ -1,11 +1,22 @@
-.searchForm__form{
+.searchForm__form {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     margin: 20px auto 20px auto;
+    max-width: 300px;
 }
 
-.searchForm__select{
+.searchForm__select {
+    appearance: none; /* Elimina el estilo nativo */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('/icons/down_arrow_icon.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 25px;
+
+
     padding: 10px 10px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -13,7 +24,7 @@
     font-weight: 600;
 }
 
-.searchForm__option{
+.searchForm__option {
     padding: 10px 10px;
     margin: 20px;
     text-transform: uppercase;
@@ -22,13 +33,13 @@
 }
 
 @media screen and (min-width: 600px) {
-    .searchForm__form{
+    .searchForm__form {
         flex-direction: row;
         column-gap: 1.5rem;
         max-width: 800px;
     }
 
-    .searchForm__select{
+    .searchForm__select {
         flex-basis: 50%;
     }
 }

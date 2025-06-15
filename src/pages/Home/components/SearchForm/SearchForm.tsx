@@ -1,7 +1,7 @@
 import './SearchForm.css';
 import { useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from '@/redux/store';
-import { updateQueryParam, setSelectedQueryParams } from '@/redux/features/chords/chordParamsSlice';
+import { updateQueryParam, setSelectedQueryParams, resetQueryParams } from '@/redux/features/chords/chordParamsSlice';
 import { useQuery } from '@tanstack/react-query';
 import useNotesOrTypes from '@/hooks/useNotesOrTypes';
 
@@ -24,6 +24,10 @@ export default function SearchForm() {
     const handleSelectedChordType = (e: React.ChangeEvent<HTMLSelectElement>) => {
         console.log(e.target.value)
         dispatch(updateQueryParam({ key: 'type', value: e.target.value }))
+    }
+
+    const handleResetSearch = () => {
+        dispatch(resetQueryParams())
     }
 
     return (
@@ -67,6 +71,12 @@ export default function SearchForm() {
                     ))
                 }
             </select>
+
+            <button
+                onClick={() => handleResetSearch}
+            >
+                Reset
+            </button>
         </form>
     )
 }

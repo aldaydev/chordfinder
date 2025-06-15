@@ -40,11 +40,12 @@ const chordSlice = createSlice({
             state.selectedQueryParams[action.payload.key] =
                 action.payload.value;
         },
+        resetQueryParams: () => initialState
     },
 });
 
 // Exportamos las acciones para usarlas desde los componentes
-export const { setSelectedQueryParams, updateQueryParam } = chordSlice.actions;
+export const { setSelectedQueryParams, updateQueryParam, resetQueryParams } = chordSlice.actions;
 
 // Exportamos el reducer para conectarlo al store más adelante
 export default chordSlice.reducer;
